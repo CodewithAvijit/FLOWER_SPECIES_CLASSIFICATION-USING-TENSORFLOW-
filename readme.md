@@ -2,6 +2,8 @@
 ## APP
 
 ![App Screenshot](API.png)
+## UI
+![FRONT END SCREENSHOT](FRONT_END.png)
 # 🌸 Flower Species Prediction API (ANN + FastAPI)
 
 This project is a machine learning-powered API built with **FastAPI** that predicts the **species of a flower** based on its features. It uses an **Artificial Neural Network (ANN)** trained on the Iris dataset to classify the flower into one of three species.
