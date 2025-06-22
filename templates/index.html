@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flower Species Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌸 Flower Species Prediction</h1>
+
+        <form action="/predict" method="post">
+            <label for="sepallength">Sepal Length (cm):</label>
+            <input type="number" name="sepallength" step="0.01" min="0" required>
+
+            <label for="sepalwidth">Sepal Width (cm):</label>
+            <input type="number" name="sepalwidth" step="0.01" min="0" required>
+
+            <label for="petalength">Petal Length (cm):</label>
+            <input type="number" name="petalength" step="0.01" min="0" required>
+
+            <label for="petawidth">Petal Width (cm):</label>
+            <input type="number" name="petawidth" step="0.01" min="0" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        <!--  Result box is **always** rendered.  -->
+        <div class="result-box">
+            {% if result %}
+                🌼 <strong>Predicted Flower:</strong> {{ result }}
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
